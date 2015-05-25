@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public enum ProductType {
     BEER("Beer",5,"liquor"),
     VODKA("Vodka",12,"liquor"),
-    RUM("Run",24,"liquor"),
+    RUM("Rum",24,"liquor"),
     RICE("Rice",3,"groats"),
     BUCKWHEAT("Buckwheat", 4,"groats"),
     TOMATO("Tomato",3,"Vegetables"),
@@ -17,20 +17,22 @@ public enum ProductType {
     PEPPER("Pepper",6,"Vegetables");
     String nameOfProduct;
     double price;
-    String nameOfType;
+    Provider provider;
 
-    ProductType(String nameOfProduct, double price, String nameOfType){
+    ProductType(String nameOfProduct, double price,Provider provider){
         this.nameOfProduct = nameOfProduct;
         this.price = price;
-        this.nameOfType = nameOfType;
+        this.provider = provider;
     }
 
     public String getNameOfProduct() {
+
         return nameOfProduct;
     }
 
-    public String getNameOfType() {
-        return nameOfType;
+
+    public Provider getProvider() {
+        return provider;
     }
 
     public double getPrice() {

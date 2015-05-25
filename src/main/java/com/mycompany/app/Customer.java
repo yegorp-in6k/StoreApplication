@@ -4,7 +4,7 @@ package com.mycompany.app;
  * Created by Егор on 24.05.2015.
  */
 public class Customer {
-    public void selectArtist() {
+   /* public void selectArtist() {
         boolean notExit = true;
         while(notExit) {
             ur = userChoice();
@@ -16,5 +16,5 @@ public class Customer {
         } // while
     } // selectArtist
 
-    public void selectAlbum() {
+    public void selectAlbum() {*/
 }
